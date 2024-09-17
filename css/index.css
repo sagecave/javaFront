@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+main{
+    display: grid;
+    grid-template-columns:[full-start] 3fr [content]1fr 3fr [full-end];
+    
+   
+    section{
+        height: 850px;
+        display: grid;
+        grid-column: full;
+        grid-template-columns: subgrid;
+        background-color:rgb(43, 42, 40);
+        align-items: center;
+        
+        
+        article{
+            grid-column: full;
+            text-align: center;
+            display: grid;
+            grid-template-columns: subgrid;
+            color: white;
+
+            h1{
+                font-size: 4rem;
+            }
+            h2{
+                font-size: 3rem;
+            }
+            h1, h2{
+                grid-column: full;
+               
+            }
+            input, button{
+                grid-column: content;
+                margin: .5rem;
+                border-radius: 2rem;
+                padding: 1rem .5rem;
+              
+            }
+
+            button{
+                background-color: red;
+                color: white;
+            }
+
+
+
+        }
+    }
+}
