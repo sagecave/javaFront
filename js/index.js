@@ -4,7 +4,7 @@ function numberGenerator() {
   let header = document.querySelector("h2");
   let guess = yourNumber.value;
   console.log(guess);
-  if (guess == number) {
+  if (guess === number) {
     header.textContent = "Winner, the number was  " + number;
     header.style.color = "green";
     console.log("ja");
